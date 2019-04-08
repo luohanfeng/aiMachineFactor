@@ -22,8 +22,8 @@ def cache2factor(factorfield='pre',
         factor_list.append(df)
 
     # 数据转换
-    facotr_data = pd.concat(factor_list)
-    return facotr_data.set_index(['date', 'windcode'])[factorfield]
+    factor_data = pd.concat(factor_list)
+    return factor_data.set_index(['date', 'windcode'])[factorfield]
 
 
 def cache2price(pricefield='close',
